@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: #F8F7FC;
+    padding: 150px 260px 80px 260px;
+}
+
+.main-block {
+    background-image: url(img/mainBg.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    align-items: center;
+    padding: 65px 80px 75px 100px;
+}
+
+.main-block h2 {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.main_left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.main_right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 85px;
+}
+
+.gym_picture {
+    width: 609px;
+    height: 650px;
+    position: relative;
+}
+
+.main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main_left-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main_left-info>span {
+    font-size: 14px;
+    color: #000000;
+    opacity: 40%;
+    max-width: 265px;
+}
+
+.marker {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.main_left-info .marker {
+    position: relative;
+}
+
+.marker-item {
+    width: 18px;
+    height: 18px;
+    background: #727272;
+    border: 2px solid #FF4141;
+    z-index: 9999999999999;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.marker-animation {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    top: 0;
+    background: #727272;
+    border: 1px solid #FF4141;
+    opacity: 0.7;
+    border-radius: 50%;
+}
+
+.marker-animation_active {
+    display: block;
+    animation: pulse 1400ms ease-out infinite;
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+.info_block {
+    width: 100%;
+    padding: 23px 26px;
+    border-radius: 20px;
+    border-left: 4px solid #727272;
+    margin-top: 40px;
+    display: none;
+    align-items: center;
+    gap: 18px;
+    box-shadow: 0 0 50px #00000019;
+}
+
+.info_block img {
+    width: 45px;
+    height: 45px;
+}
+
+.info_block_active {
+    display: flex;
+}
+
+.info_block-left {
+    width: 84px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #727272;
+    border-radius: 10px;
+}
+
+.info_block p {
+    max-width: 393px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.marker1 {
+    left: 347px;
+    top: 68px;
+}
+
+.marker2 {
+    left: 291px;
+    top: 312px;
+}
+
+/* line */
+
+.line {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+}
+
+.line1 {
+    width: 338.5px;
+    height: 209.5px;
+    top: 10px;
+}
+
+.line2 {
+    width: 396.5px;
+    height: 61.5px;
+    top: auto;
+    bottom: 10px;
+    left: -15px;
+}
+
+.line svg {
+    max-width: 100%;
+    max-height: 100%;
+    transform-origin: left center;
+    opacity: 0;
+}
+
+.line_active_right {
+    animation: lineGrow 1s ease-out forwards;
+}
+
+/* Keyframe animation */
+@keyframes lineGrow {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
