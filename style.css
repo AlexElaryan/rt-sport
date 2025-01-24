@@ -171,17 +171,21 @@ body {
     font-size: 16px;
 }
 
-.marker1 {
+.marker-box1 {
     left: 347px;
     top: 68px;
 }
 
-.marker2 {
+.marker-box2 {
     left: 291px;
     top: 312px;
 }
 
 /* line */
+
+.marker-box {
+    position: relative;
+}
 
 .line {
     position: absolute;
@@ -200,7 +204,7 @@ body {
     width: 396.5px;
     height: 61.5px;
     top: auto;
-    bottom: 10px;
+    bottom: -18px;
     left: -15px;
 }
 
