@@ -31,6 +31,7 @@ body {
     gap: 60px;
     align-items: center;
     padding: 65px 80px 75px 100px;
+    overflow: hidden;
 }
 
 .main-block h2 {
@@ -61,6 +62,15 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.gym_picture>img {
+    width: 929px;
+    height: 911px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
 }
 
 .main_left-info {
@@ -110,13 +120,15 @@ body {
     border: 1px solid #FF4141;
     opacity: 0.7;
     border-radius: 50%;
+    display: block;
+    animation: pulse 1400ms ease-out infinite;
 }
 
+/* 
 .marker-animation_active {
     display: block;
     animation: pulse 1400ms ease-out infinite;
-
-}
+} */
 
 @keyframes pulse {
     0% {
@@ -172,19 +184,50 @@ body {
 }
 
 .marker-box1 {
-    left: 347px;
-    top: 68px;
+    left: 348px;
+    top: 92px;
 }
 
 .marker-box2 {
-    left: 291px;
-    top: 312px;
+    left: 293px;
+    top: 330px;
+}
+
+.marker-box3 {
+    top: 260px;
+    left: 260px;
+}
+
+.marker-box4 {
+    left: 278px;
+    top: 100px;
+}
+
+.marker-box5 {
+    left: 464px;
+    top: 386px;
+}
+
+.marker-box6 {
+    left: 285px;
+    top: 35px;
+}
+
+.marker-box7 {
+    left: 215px;
+    top: 291px;
+}
+
+.marker-box8 {
+    left: 537px;
+    top: 421px;
 }
 
 /* line */
 
 .marker-box {
     position: relative;
+    z-index: 111;
 }
 
 .line {
@@ -192,40 +235,170 @@ body {
     overflow: hidden;
     left: 0;
     top: 0;
+    z-index: 11;
 }
 
 .line1 {
-    width: 338.5px;
-    height: 209.5px;
     top: 10px;
 }
 
 .line2 {
-    width: 396.5px;
-    height: 61.5px;
     top: auto;
-    bottom: -18px;
-    left: -15px;
+    bottom: -15px;
+    left: 5px;
 }
 
-.line svg {
-    max-width: 100%;
-    max-height: 100%;
-    transform-origin: left center;
+.line3 {
+    left: 10px;
+    top: -5px;
+}
+
+.line5 {
+    top: auto;
+    bottom: -30px;
+}
+
+.line6 {
+    top: 5px;
+}
+
+.line7 {
+    top: auto;
+    bottom: -20px;
+}
+
+.line8 {
+    top: auto;
+    bottom: -20px;
+}
+
+.line img {
     opacity: 0;
 }
 
-.line_active_right {
-    animation: lineGrow 1s ease-out forwards;
+.line1 img {
+    width: 333.5px;
+    height: 209.5px;
 }
 
-/* Keyframe animation */
-@keyframes lineGrow {
+.line2 img {
+    width: 379px;
+    height: 66px;
+    transform: rotate(-4deg);
+}
+
+.line3 img {
+    width: 414px;
+    transform: rotate(-4deg);
+}
+
+.line4 img {
+    width: 404px;
+}
+
+.line5 img {
+    width: 220px;
+    transform: rotate(-5deg);
+}
+
+.line6 img {
+    width: 397.5px;   
+}
+
+.line7 img {
+    width: 467px;
+    transform: rotate(-3deg);
+}
+
+.line8 img {
+    width: 147px;
+    transform: rotate(-4deg);
+}
+
+.marker-box9 {
+    left: 420px;
+    top: 550px;
+}
+
+.line9 img {
+    width: 269px;
+    transform: rotate(-3deg);
+}
+
+.line9 {
+    top: auto;
+    bottom: -22px;
+}
+
+.marker-box10 {
+    left: 282px;
+    top: 570px;
+}
+
+.line10 {
+    top: auto;
+    bottom: -22px;
+    height: 274px;
+}
+
+.line10 img {
+    width: 404.5px;
+    transform: rotate(-3deg);
+}
+
+.marker-box11 {
+    left: 37px;
+    top: 460px;
+}
+
+.marker-box12 {
+    left: 255px;
+    top: 150px;
+}
+
+.line12 img {
+    width: 431.5px;
+}
+
+.marker-box13 {
+    top: 575px;
+    left: 533px;
+}
+
+.line13 {
+    top: auto;
+    bottom: -22px;
+}
+
+.line13 img {
+    width: 158px;
+    transform: rotate(-3deg);
+}
+
+.line11 {
+    top: auto;
+    bottom: -22px;
+}
+
+.line11 img {
+    width: 650px;
+    transform: rotate(-1deg);
+}
+
+.line_active_right {
+    animation: lineAfter .5s ease-out forwards;
+}
+
+.line_active_right img {
+    opacity: 1;
+}
+
+@keyframes lineAfter {
     0% {
-        opacity: 0;
+        width: 0px;
     }
 
     100% {
-        opacity: 1;
+        width: 650px;
     }
 }
