@@ -124,12 +124,6 @@ body {
     animation: pulse 1400ms ease-out infinite;
 }
 
-/* 
-.marker-animation_active {
-    display: block;
-    animation: pulse 1400ms ease-out infinite;
-} */
-
 @keyframes pulse {
     0% {
         transform: scale(0.1);
@@ -236,8 +230,9 @@ body {
     left: 0;
     top: 0;
     z-index: 11;
+    display: none;
 }
-
+/* 234 */
 .line1 {
     top: 10px;
 }
@@ -386,6 +381,7 @@ body {
 }
 
 .line_active_right {
+    display: block;
     animation: lineAfter .5s ease-out forwards;
 }
 
