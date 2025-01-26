@@ -258,8 +258,6 @@ body {
     overflow: hidden;
     z-index: 11;
     display: none;
-    display: block;
-
 }
 
 .line1 {
