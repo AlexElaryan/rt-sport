@@ -54,17 +54,16 @@ let line = document.querySelectorAll('.line');
 let vectors = document.querySelectorAll('.line > img');
 
 function forPicturesChange() {
-    if (window.screen.availWidth <= 1200) {
+    if (window.innerWidth <= 1200) {
         vectors.forEach((el, ind) => {
             el.src = forVectors.mobile[ind];
         })
         objKeys.forEach((key, ind) => {
-
             resultObj[key][1] = forGymDesktopPictures.mobile[ind];
         });
         gymPicture.src = 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
     }
-    else if (window.screen.availWidth <= 1400) {
+    else if (window.innerWidth <= 1400) {
         vectors.forEach((el, ind) => {
             el.src = forVectors.laptop[ind];
         })
@@ -84,8 +83,6 @@ function forPicturesChange() {
     }
 
 }
-
-forPicturesChange();
 
 
 marker.forEach((el, ind) => {
@@ -111,9 +108,9 @@ marker.forEach((el, ind) => {
         info.classList.remove('info_block_active');
         if (el !== marker[marker.length - 1]) {
             line[ind].classList.remove('line_active_right');
-            if (window.screen.availWidth <= 1200) {
+            if (window.innerWidth <= 1200) {
                 gymPicture.src = 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
-            } else if (window.screen.availWidth <= 1400) {
+            } else if (window.innerWidth <= 1400) {
                 gymPicture.src = 'img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
             } else {
                 gymPicture.src = 'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
@@ -124,3 +121,4 @@ marker.forEach((el, ind) => {
 
 
 window.addEventListener('resize', forPicturesChange);
+window.addEventListener('load', forPicturesChange);
