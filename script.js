@@ -13,39 +13,114 @@ let obj = {
     tuelve: ['Хромированные направляющие грузоблока', 'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры 8.png'],
     thrteen: ['Качественная пластиковая фурнитура российского производства', 'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры.png'],
 };
+
+let resultObj = { ...obj };
+
+let forVectors = {
+    desktop: ['img/vector/Vector1.png', 'img/vector/Vector2.png', 'img/vector/Vector3.png', 'img/vector/Vector4.png', 'img/vector/Vector5.png', 'img/vector/Vector6.png', 'img/vector/Vector7.png', 'img/vector/Vector8.png', 'img/vector/Vector9.png', 'img/vector/Vector10.png', 'img/vector/Vector11.png', 'img/vector/Vector12.png', 'img/vector/Vector13.png'],
+    laptop: ['img/vector/Vector01.png', 'img/vector/Vector02.png', 'img/vector/Vector03.png', 'img/vector/Vector04.png', 'img/vector/Vector05.png', 'img/vector/Vector06.png', 'img/vector/Vector07.png', 'img/vector/Vector08.png', 'img/vector/Vector09.png', 'img/vector/Vector010.png', 'img/vector/Vector011.png', 'img/vector/Vector012.png', 'img/vector/Vector013.png'],
+    mobile: ['img/vector/Vector001.png', 'img/vector/Vector002.png', 'img/vector/Vector003.png', 'img/vector/Vector004.png', 'img/vector/Vector005.png', 'img/vector/Vector006.png', 'img/vector/Vector007.png', 'img/vector/Vector008.png', 'img/vector/Vector009.png', 'img/vector/Vector0010.png', 'img/vector/Vector0011.png', 'img/vector/Vector0012.png', 'img/vector/Vector0013.png']
+};
+
+let forGymDesktopPictures = {
+    desktop: [
+        'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры 2.png',
+        'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры 3.png',
+        'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры 4.png',
+        'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры 5.png',
+        'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры.png',
+        'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры.png',
+        'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры.png',
+        'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры 6.png',
+        'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры.png',
+        'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры.png',
+        'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры 7.png',
+        'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры 8.png',
+        'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры.png'],
+
+    laptop: ['img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры-1.png', 'img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры-2.png', 'img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры-3.png', 'img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры-4.png', 'img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры.png', 'img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры.png', 'img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры.png', 'img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры-5.png', 'img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры.png', 'img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры.png', 'img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры-6.png', 'img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры-7.png', 'img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры.png'],
+
+    mobile: ['img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры-1.png', 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры-2.png', 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры-3.png', 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры-4.png', 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры.png', 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры.png', 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры.png', 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры-5.png', 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры.png', 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры.png', 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры-6.png', 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры-7.png', 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры.png'],
+};
+
 let objKeys = Object.keys(obj);
-console.log(objKeys);
 
-
-let marker = document.querySelectorAll('.marker');
+let marker = document.querySelectorAll('.marker-item');
 let info = document.querySelector('.info_block');
 let infoText = document.querySelector('.info_block > p');
 let gymPicture = document.querySelector('.gym_picture > img');
 let line = document.querySelectorAll('.line');
 
+let vectors = document.querySelectorAll('.line > img');
+
+function forPicturesChange() {
+    if (window.screen.availWidth <= 1200) {
+        vectors.forEach((el, ind) => {
+            el.src = forVectors.mobile[ind];
+        })
+        objKeys.forEach((key, ind) => {
+
+            resultObj[key][1] = forGymDesktopPictures.mobile[ind];
+        });
+        gymPicture.src = 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
+    }
+    else if (window.screen.availWidth <= 1400) {
+        vectors.forEach((el, ind) => {
+            el.src = forVectors.laptop[ind];
+        })
+        objKeys.forEach((key, ind) => {
+            resultObj[key][1] = forGymDesktopPictures.laptop[ind];
+        });
+        gymPicture.src = 'img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
+    } else {
+        vectors.forEach((el, ind) => {
+            el.src = forVectors.desktop[ind];
+        })
+        objKeys.forEach((key, ind) => {
+            resultObj[key][1] = forGymDesktopPictures.desktop[ind];
+        });
+        gymPicture.src = 'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
+
+    }
+
+}
+
+forPicturesChange();
+
 
 marker.forEach((el, ind) => {
     el.onmouseenter = () => {
-        el.children[1].classList.add('marker-animation_active');
+        console.log(resultObj);
+
+        el.classList.add('marker-animation_active');
         if (el !== marker[marker.length - 1]) {
             line[ind].classList.add('line_active_right');
             if (objKeys[ind]) {
                 info.classList.add('info_block_active');
-                infoText.textContent = obj[objKeys[ind]][0];
+                infoText.textContent = resultObj[objKeys[ind]][0];
 
-                if (obj[objKeys[ind]][1]) {
-                    gymPicture.src = obj[objKeys[ind]][1];
+                if (resultObj[objKeys[ind]][1]) {
+                    gymPicture.src = resultObj[objKeys[ind]][1];
                 }
             }
         }
     }
-    
+
     el.onmouseleave = () => {
-        el.children[1].classList.remove('marker-animation_active');
+        el.classList.remove('marker-animation_active');
         info.classList.remove('info_block_active');
         if (el !== marker[marker.length - 1]) {
             line[ind].classList.remove('line_active_right');
-            gymPicture.src = 'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
+            if (window.screen.availWidth <= 1200) {
+                gymPicture.src = 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
+            } else if (window.screen.availWidth <= 1400) {
+                gymPicture.src = 'img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
+            } else {
+                gymPicture.src = 'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
+            }
         }
     }
 })
+
+
+window.addEventListener('resize', forPicturesChange);
