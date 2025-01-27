@@ -46,6 +46,7 @@ let forGymDesktopPictures = {
 let objKeys = Object.keys(obj);
 
 let marker = document.querySelectorAll('.marker-item');
+let mainLInfo = document.querySelector('.main_left-info');
 let info = document.querySelector('.info_block');
 let infoText = document.querySelector('.info_block > p');
 let gymPicture = document.querySelector('.gym_picture > img');
@@ -87,9 +88,8 @@ function forPicturesChange() {
 
 marker.forEach((el, ind) => {
     el.onmouseenter = () => {
-        console.log(resultObj);
-
         el.classList.add('marker-animation_active');
+        mainLInfo.classList.add('hidden');
         if (el !== marker[marker.length - 1]) {
             line[ind].classList.add('line_active_right');
             if (objKeys[ind]) {
@@ -106,6 +106,7 @@ marker.forEach((el, ind) => {
     el.onmouseleave = () => {
         el.classList.remove('marker-animation_active');
         info.classList.remove('info_block_active');
+        mainLInfo.classList.remove('hidden');
         if (el !== marker[marker.length - 1]) {
             line[ind].classList.remove('line_active_right');
             if (window.innerWidth <= 1200) {
@@ -118,7 +119,6 @@ marker.forEach((el, ind) => {
         }
     }
 })
-
 
 window.addEventListener('resize', forPicturesChange);
 window.addEventListener('load', forPicturesChange);

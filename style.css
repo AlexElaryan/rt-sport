@@ -758,4 +758,8 @@ body {
         right: 10px;
         top: 7px;
     }
+
+    .hidden {
+        visibility: hidden;
+    }
 }
