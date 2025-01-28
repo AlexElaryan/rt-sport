@@ -121,10 +121,11 @@ function mainFunc() {
                         forDisactive(e.target, ind);
                     }
                 } else {
-                    marker.forEach((markerEl, index) => {
-                        forDisactive(el, index);
+                    marker.forEach((markerEl, markerInd) => {
+                        if (markerEl !== e.target) {
+                            forDisactive(markerEl, markerInd);
+                        }
                     });
-
                 }
             };
 
