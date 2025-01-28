@@ -93,7 +93,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
 }
 
 .main_left-info .marker {
@@ -108,6 +107,7 @@ body {
     z-index: 9999999999999;
     opacity: 1;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .marker-animation {

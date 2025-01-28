@@ -98,46 +98,49 @@ function forDisactive(element, ind) {
         gymPicture.src = 'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
     }
 }
-
 function mainFunc() {
     const isMobileView = window.innerWidth < 1200;
 
-    marker.forEach((el, ind) => {
-        if (isMobileView) {
-            window.onclick = (e) => {
-                if (e.target.classList.contains('marker-item')) {
-                    marker.forEach((markerEl, markerInd) => {
-                        if (markerEl !== e.target) {
-                            forDisactive(markerEl, markerInd);
-                        }
-                    });
+    document.removeEventListener('click', handleClick);
 
-                    if (!e.target.classList.contains('marker-animation_active')) {
-                        const ind = Array.from(marker).indexOf(e.target);
-                        forActivate(e.target, ind);
-                    } else {
-                        const ind = Array.from(marker).indexOf(e.target);
-                        console.log(`Deactivating clicked marker at index: ${ind}`);
-                        forDisactive(e.target, ind);
-                    }
-                } else {
-                    marker.forEach((markerEl, markerInd) => {
-                        if (markerEl !== e.target) {
-                            forDisactive(markerEl, markerInd);
-                        }
-                    });
-                }
-            };
+    if (isMobileView) {
+        document.addEventListener('click', handleClick);
 
+        marker.forEach((el, ind) => {
             el.onmouseenter = null;
             el.onmouseleave = null;
-        } else {
+        });
+    } else {
+        marker.forEach((el, ind) => {
             el.onmouseenter = () => forActivate(el, ind);
             el.onmouseleave = () => forDisactive(el, ind);
-
             el.onclick = null;
+        });
+    }
+}
+
+function handleClick(e) {
+    if (e.target.classList.contains('marker-item')) {
+        marker.forEach((markerEl, markerInd) => {
+            if (markerEl !== e.target) {
+                forDisactive(markerEl, markerInd);
+            }
+        });
+
+        if (!e.target.classList.contains('marker-animation_active')) {
+            const ind = Array.from(marker).indexOf(e.target);
+            forActivate(e.target, ind);
+        } else {
+            const ind = Array.from(marker).indexOf(e.target);
+            forDisactive(e.target, ind);
         }
-    });
+    } else {
+        marker.forEach((markerEl, markerInd) => {
+            if (markerEl !== e.target) {
+                forDisactive(markerEl, markerInd);
+            }
+        });
+    }
 }
 
 
