@@ -51,74 +51,101 @@ let info = document.querySelector('.info_block');
 let infoText = document.querySelector('.info_block > p');
 let gymPicture = document.querySelector('.gym_picture > img');
 let line = document.querySelectorAll('.line');
-
 let vectors = document.querySelectorAll('.line > img');
 
 function forPicturesChange() {
     if (window.innerWidth <= 1200) {
-        vectors.forEach((el, ind) => {
-            el.src = forVectors.mobile[ind];
-        })
-        objKeys.forEach((key, ind) => {
-            resultObj[key][1] = forGymDesktopPictures.mobile[ind];
-        });
+        vectors.forEach((el, ind) => (el.src = forVectors.mobile[ind]));
+        objKeys.forEach((key, ind) => (resultObj[key][1] = forGymDesktopPictures.mobile[ind]));
         gymPicture.src = 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
-    }
-    else if (window.innerWidth <= 1400) {
-        vectors.forEach((el, ind) => {
-            el.src = forVectors.laptop[ind];
-        })
-        objKeys.forEach((key, ind) => {
-            resultObj[key][1] = forGymDesktopPictures.laptop[ind];
-        });
+    } else if (window.innerWidth <= 1400) {
+        vectors.forEach((el, ind) => (el.src = forVectors.laptop[ind]));
+        objKeys.forEach((key, ind) => (resultObj[key][1] = forGymDesktopPictures.laptop[ind]));
         gymPicture.src = 'img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
     } else {
-        vectors.forEach((el, ind) => {
-            el.src = forVectors.desktop[ind];
-        })
-        objKeys.forEach((key, ind) => {
-            resultObj[key][1] = forGymDesktopPictures.desktop[ind];
-        });
+        vectors.forEach((el, ind) => (el.src = forVectors.desktop[ind]));
+        objKeys.forEach((key, ind) => (resultObj[key][1] = forGymDesktopPictures.desktop[ind]));
         gymPicture.src = 'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
-
     }
+}
 
+function forActivate(element, ind) {
+    element.classList.add('marker-animation_active');
+    mainLInfo.classList.add('hidden');
+    if (element !== marker[marker.length - 1]) {
+        line[ind].classList.add('line_active_right');
+        if (objKeys[ind]) {
+            info.classList.add('info_block_active');
+            infoText.textContent = resultObj[objKeys[ind]][0];
+
+            if (resultObj[objKeys[ind]][1]) {
+                gymPicture.src = resultObj[objKeys[ind]][1];
+            }
+        }
+    }
+}
+
+function forDisactive(element, ind) {
+    element.classList.remove('marker-animation_active');
+    line[ind]?.classList.remove('line_active_right');
+    info.classList.remove('info_block_active');
+    mainLInfo.classList.remove('hidden');
+    if (window.innerWidth <= 1200) {
+        gymPicture.src = 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
+    } else if (window.innerWidth <= 1400) {
+        gymPicture.src = 'img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
+    } else {
+        gymPicture.src = 'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
+    }
+}
+
+function mainFunc() {
+    const isMobileView = window.innerWidth < 1200;
+
+    marker.forEach((el, ind) => {
+        if (isMobileView) {
+            window.onclick = (e) => {
+                if (e.target.classList.contains('marker-item')) {
+                    marker.forEach((markerEl, markerInd) => {
+                        if (markerEl !== e.target) {
+                            forDisactive(markerEl, markerInd);
+                        }
+                    });
+
+                    if (!e.target.classList.contains('marker-animation_active')) {
+                        const ind = Array.from(marker).indexOf(e.target);
+                        forActivate(e.target, ind);
+                    } else {
+                        const ind = Array.from(marker).indexOf(e.target);
+                        console.log(`Deactivating clicked marker at index: ${ind}`);
+                        forDisactive(e.target, ind);
+                    }
+                } else {
+                    marker.forEach((markerEl, index) => {
+                        forDisactive(el, index);
+                    });
+
+                }
+            };
+
+            el.onmouseenter = null;
+            el.onmouseleave = null;
+        } else {
+            el.onmouseenter = () => forActivate(el, ind);
+            el.onmouseleave = () => forDisactive(el, ind);
+
+            el.onclick = null;
+        }
+    });
 }
 
 
-marker.forEach((el, ind) => {
-    el.onmouseenter = () => {
-        el.classList.add('marker-animation_active');
-        mainLInfo.classList.add('hidden');
-        if (el !== marker[marker.length - 1]) {
-            line[ind].classList.add('line_active_right');
-            if (objKeys[ind]) {
-                info.classList.add('info_block_active');
-                infoText.textContent = resultObj[objKeys[ind]][0];
+window.addEventListener('resize', () => {
+    forPicturesChange();
+    mainFunc();
+});
 
-                if (resultObj[objKeys[ind]][1]) {
-                    gymPicture.src = resultObj[objKeys[ind]][1];
-                }
-            }
-        }
-    }
-
-    el.onmouseleave = () => {
-        el.classList.remove('marker-animation_active');
-        info.classList.remove('info_block_active');
-        mainLInfo.classList.remove('hidden');
-        if (el !== marker[marker.length - 1]) {
-            line[ind].classList.remove('line_active_right');
-            if (window.innerWidth <= 1200) {
-                gymPicture.src = 'img/Мобильная версия/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
-            } else if (window.innerWidth <= 1400) {
-                gymPicture.src = 'img/Планшет/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
-            } else {
-                gymPicture.src = 'img/ПК/Грузоблачные тренажеры/Грузоблочные тренажеры.png';
-            }
-        }
-    }
-})
-
-window.addEventListener('resize', forPicturesChange);
-window.addEventListener('load', forPicturesChange);
+window.addEventListener('load', () => {
+    forPicturesChange();
+    mainFunc();
+});
