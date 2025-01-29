@@ -1,0 +1,420 @@
+.gym_picture>img {
+    width: 962px;
+    height: 911px;
+    top: -30px;
+    left: -28px;
+}
+
+.gym_picture {
+    width: 642px;
+    height: 650px;
+}
+
+.info_block {
+    align-items: flex-start;
+}
+
+.info_block p  {
+    font-weight: 500;
+}
+
+.info_block p div {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+
+/* marker box start */
+
+.marker-box1 {
+    top: 512px;
+    left: 210px;
+}
+
+.marker-box2 {
+    top: 187px;
+    left: 217px;
+}
+
+.marker-box3 {
+    top: 402px;
+    left: 562px;
+}
+
+.marker-box4 {
+    top: 278px;
+    left: 573px;
+}
+
+.marker-box5 {
+    top: 193px;
+    left: 64px;
+}
+
+.marker-box6 {
+    top: 541px;
+    left: 76px;
+}
+
+.marker-box7 {
+    top: 139px;
+    left: 342px;
+}
+
+.marker-box8 {
+    top: 361px;
+    left: 357px;
+}
+
+.marker-box9 {
+    top: 500px;
+    left: 35px;
+}
+
+.marker-box10 {
+    top: 101px;
+    left: 204px;
+}
+
+.marker-box11 {
+    top: 472px;
+    left: 115px;
+}
+
+.marker-box12 {
+    top: 52px;
+    left: 322px;
+}
+
+/* marker box end */
+
+/* line start */
+
+
+.line1 {
+    bottom: 5px;
+    left: 10px;
+}
+
+.line2 {
+    top: 5px;
+    left: 10px;
+}
+
+.line3 {
+    left: 5px;
+    bottom: 1px;
+}
+
+.line4 {
+    left: 7px;
+    top: 3px;
+}
+
+.line5 {
+    left: 8px;
+    top: 5px;
+}
+
+.line6 {
+    left: 10px;
+    bottom: 0px;
+}
+
+.line7 {
+    left: 10px;
+    top: 5px;
+}
+
+.line8 {
+    left: 10px;
+    bottom: 0px;
+}
+
+.line9 {
+    left: 18px;
+    bottom: 0px;
+}
+
+.line10 {
+    left: 11px;
+    top: 10px;
+}
+
+.line11 {
+    left: 13px;
+    bottom: 5px;
+}
+
+.line12 {
+    left: 5px;
+    top: 1px;
+}
+
+@media screen and (max-width:1400px) {
+    .gym_picture {
+        width: 541px;
+        height: 548px;
+    }
+
+    .gym_picture>img {
+        width: 862px;
+        height: 754px;
+        top: -26px;
+        left: -30px;
+    }
+
+    .main-block {
+        gap: 20px;
+    }
+
+    /* marker box start */
+
+    .marker-box1 {
+        top: 435px;
+        left: 177px;
+    }
+
+    .marker-box2 {
+        top: 157px;
+        left: 182px;
+    }
+
+    .marker-box3 {
+        top: 344px;
+        left: 475px;
+    }
+
+    .marker-box4 {
+        top: 236px;
+        left: 483px;
+    }
+
+    .marker-box5 {
+        top: 162px;
+        left: 53px;
+    }
+
+    .marker-box6 {
+        top: 455px;
+        left: 63px;
+    }
+
+    .marker-box7 {
+        top: 116px;
+        left: 288px;
+    }
+
+    .marker-box8 {
+        top: 305px;
+        left: 301px;
+    }
+
+    .marker-box9 {
+        top: 429px;
+        left: 16px;
+    }
+
+    .marker-box10 {
+        top: 86px;
+        left: 172px;
+    }
+
+    .marker-box11 {
+        top: 397px;
+        left: 89px;
+    }
+
+    .marker-box12 {
+        top: 46px;
+        left: 268px;
+    }
+
+    /* marker box end */
+
+    .line1 {
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .line3 {
+        left: 10px;
+        bottom: 5px;
+    }
+
+    .line4 {
+        left: 10px;
+        top: 10px;
+    }
+
+    .line6 {
+        left: 10px;
+        bottom: 7px;
+    }
+
+    .line7 {
+        left: 10px;
+        top: 5px;
+    }
+
+    .line8 {
+        left: 10px;
+        bottom: 4px;
+    }
+
+    .line9 {
+        left: 18px;
+        bottom: 7px;
+    }
+
+    .line11 {
+        left: 13px;
+        bottom: 5px;
+    }
+
+    .line12 {
+        left: 5px;
+        top: 1px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .main-block {
+        padding: 30px 8px;
+    }
+
+    .gym_picture {
+        width: 365px;
+        height: 370px;
+    }
+
+    .gym_picture>img {
+        width: 412px;
+        height: fit-content;
+        left: -20px;
+        top: -23px;
+    }
+
+    .info_block {
+        top: 527px;
+    }
+
+    .marker-box1 {
+        top: 292px;
+        left: 118px;
+    }
+
+    .marker-box2 {
+        top: 106px;
+        left: 119px;
+    }
+
+    .marker-box3 {
+        top: 236px;
+        left: 320px;
+    }
+
+    .marker-box4 {
+        top: 157px;
+        left: 323px;
+    }
+
+    .marker-box5 {
+        top: 107px;
+        left: 30px;
+    }
+
+    .marker-box6 {
+        top: 307px;
+        left: 42px;
+    }
+
+    .marker-box7 {
+        top: 77px;
+        left: 193px;
+    }
+
+    .marker-box8 {
+        top: 203px;
+        left: 199px;
+    }
+
+    .marker-box9 {
+        top: 289px;
+        left: 11px;
+    }
+
+    .marker-box10 {
+        top: 56px;
+        left: 115px;
+    }
+
+    .marker-box11 {
+        top: 267px;
+        left: 59px;
+    }
+
+    .marker-box12 {
+        top: 29px;
+        left: 181px;
+    }
+
+    .line1 {
+        bottom: auto;
+        top: 8px;
+        left: 10px;
+    }
+
+    .line2 {
+        top: 7px;
+    }
+
+    .line3 {
+        left: auto;
+        right: 5px;
+        bottom: auto;
+        top: 5px;
+    }
+
+    .line4 {
+        left: auto;
+        right: 8px;
+        top: 7px;
+    }
+
+    .line6 {
+        left: 7px;
+        bottom: auto;
+        top: 7px;
+    }
+
+    .line8 {
+        left: 10px;
+        bottom: auto;
+        top: 7px;
+    }
+
+    .line9 {
+        left: 10px;
+        bottom: auto;
+        top: -15px;
+    }
+
+    .line11 {
+        left: 1px;
+        bottom: auto;
+        top: 7px;
+    }
+
+    .line12 {
+        left: 1px;
+        top: 7px;
+    }
+
+}
