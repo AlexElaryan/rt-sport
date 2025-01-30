@@ -1,16 +1,16 @@
 let obj = {
-    first: ['Горячекатанный профиль с толщиной стенки 3 мм – рамы тренажеров выдерживают заявленную производителем нагрузку', 'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе 2.png'],
-    second: ['Все узлы вращения и качения на закрытых подшипниках российского производства', 'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе 3.png'],
-    third: ['Возможность регулировки под рост спортсмена - фиксация на пружинных фиксаторах ', 'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе 4.png'],
-    forth: ['Чехлы из качественного заменителя кожи российского производства – цвет мягких элементов можно выбрать ', 'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе 5.png'],
-    fifth: ['Полимерно-порошковое покрытие рам с возможностью персонализации цвета – цвет рамы тренажера можно выбрать', 'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе.png'],
-    sixth: ['Все сварные соединения выполнены «вкруг» - гарантия на раму тренажера – 10 лет', 'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе.png'],
-    seventh: ['Промокод на скидку – ПРОМОКОД', 'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе.png'],
-    eight: ['Резиновые рукояти на местах хватов ', 'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе 6.png'],
-    nineth: ['Качественная пластиковая фурнитура российского производства', 'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе.png'],
-    ten: ['Тренажеры на свободном весе произведены и сертифицированы по ГОСТ-Р', 'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе.png'],
-    eleven: ['Адаптеры для хранения дисков нужного диаметра – на ваш выбор 25, 30 или 50 мм', 'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе 7.png'],
-    tuelve: ['Для задания нагрузки используются стандартные диски – на ваш выбор 25, 30 или 50 мм', 'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе.png'],
+    first: ['Горячекатанный профиль с толщиной стенки 3 мм – рамы тренажеров выдерживают заявленную производителем нагрузку', 'img/gym2/fitnes-1.png'],
+    second: ['Все узлы вращения и качения на закрытых подшипниках российского производства', 'img/gym2/fitnes-2.png'],
+    third: ['Возможность регулировки под рост спортсмена - фиксация на пружинных фиксаторах ', 'img/gym2/fitnes-3.png'],
+    forth: ['Чехлы из качественного заменителя кожи российского производства – цвет мягких элементов можно выбрать ', 'img/gym2/fitnes-4.png'],
+    fifth: ['Полимерно-порошковое покрытие рам с возможностью персонализации цвета – цвет рамы тренажера можно выбрать', 'img/gym2/fitnes-0.png'],
+    sixth: ['Все сварные соединения выполнены «вкруг» - гарантия на раму тренажера – 10 лет', 'img/gym2/fitnes-0.png'],
+    seventh: ['Промокод на скидку – ПРОМОКОД', 'img/gym2/fitnes-0.png'],
+    eight: ['Резиновые рукояти на местах хватов ', 'img/gym2/fitnes-5.png'],
+    nineth: ['Качественная пластиковая фурнитура российского производства', 'img/gym2/fitnes-0.png'],
+    ten: ['Тренажеры на свободном весе произведены и сертифицированы по ГОСТ-Р', 'img/gym2/fitnes-0.png'],
+    eleven: ['Адаптеры для хранения дисков нужного диаметра – на ваш выбор 25, 30 или 50 мм', 'img/gym2/fitnes-6.png'],
+    tuelve: ['Для задания нагрузки используются стандартные диски – на ваш выбор 25, 30 или 50 мм', 'img/gym2/fitnes-0.png'],
 };
 
 let resultObj = { ...obj };
@@ -23,46 +23,47 @@ let forVectors = {
 
 let forGymDesktopPictures = {
     desktop: [
-        'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе 2.png',
-        'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе 3.png',
-        'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе 4.png',
-        'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе 5.png',
-        'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе.png',
-        'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе.png',
-        'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе.png',
-        'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе 6.png',
-        'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе.png',
-        'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе.png',
-        'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе 7.png',
-        'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе.png'],
+        'img/gym2/fitnes-1.png',
+        'img/gym2/fitnes-2.png',
+        'img/gym2/fitnes-3.png',
+        'img/gym2/fitnes-4.png',
+        'img/gym2/fitnes-0.png',
+        'img/gym2/fitnes-0.png',
+        'img/gym2/fitnes-0.png',
+        'img/gym2/fitnes-5.png',
+        'img/gym2/fitnes-0.png',
+        'img/gym2/fitnes-0.png',
+        'img/gym2/fitnes-6.png',
+        'img/gym2/fitnes-0.png'
+    ],
 
     laptop: [
-        'img/Планшет/Тренажеры на свободном весе/Грузоблочные тренажеры-1.png',
-        'img/Планшет/Тренажеры на свободном весе/Грузоблочные тренажеры-2.png',
-        'img/Планшет/Тренажеры на свободном весе/Грузоблочные тренажеры-3.png',
-        'img/Планшет/Тренажеры на свободном весе/Грузоблочные тренажеры-4.png',
-        'img/Планшет/Тренажеры на свободном весе/Грузоблочные тренажеры.png',
-        'img/Планшет/Тренажеры на свободном весе/Грузоблочные тренажеры.png',
-        'img/Планшет/Тренажеры на свободном весе/Грузоблочные тренажеры.png',
-        'img/Планшет/Тренажеры на свободном весе/Грузоблочные тренажеры-5.png',
-        'img/Планшет/Тренажеры на свободном весе/Грузоблочные тренажеры.png',
-        'img/Планшет/Тренажеры на свободном весе/Грузоблочные тренажеры.png',
-        'img/Планшет/Тренажеры на свободном весе/Грузоблочные тренажеры-6.png',
-        'img/Планшет/Тренажеры на свободном весе/Грузоблочные тренажеры.png'],
+        'img/gym2/fitnes-01.png',
+        'img/gym2/fitnes-02.png',
+        'img/gym2/fitnes-03.png',
+        'img/gym2/fitnes-04.png',
+        'img/gym2/fitnes-00.png',
+        'img/gym2/fitnes-00.png',
+        'img/gym2/fitnes-00.png',
+        'img/gym2/fitnes-05.png',
+        'img/gym2/fitnes-00.png',
+        'img/gym2/fitnes-00.png',
+        'img/gym2/fitnes-06.png',
+        'img/gym2/fitnes-00.png'],
 
     mobile: [
-        'img/Мобильная версия/Тренажеры на свободном весе/Грузоблочные тренажеры-2.png',
-        'img/Мобильная версия/Тренажеры на свободном весе/Грузоблочные тренажеры-1.png',
-        'img/Мобильная версия/Тренажеры на свободном весе/Грузоблочные тренажеры-3.png',
-        'img/Мобильная версия/Тренажеры на свободном весе/Грузоблочные тренажеры-4.png',
-        'img/Мобильная версия/Тренажеры на свободном весе/Грузоблочные тренажеры.png',
-        'img/Мобильная версия/Тренажеры на свободном весе/Грузоблочные тренажеры.png',
-        'img/Мобильная версия/Тренажеры на свободном весе/Грузоблочные тренажеры.png',
-        'img/Мобильная версия/Тренажеры на свободном весе/Грузоблочные тренажеры-5.png',
-        'img/Мобильная версия/Тренажеры на свободном весе/Грузоблочные тренажеры.png',
-        'img/Мобильная версия/Тренажеры на свободном весе/Грузоблочные тренажеры.png',
-        'img/Мобильная версия/Тренажеры на свободном весе/Грузоблочные тренажеры-6.png',
-        'img/Мобильная версия/Тренажеры на свободном весе/Грузоблочные тренажеры.png'
+        'img/gym2/fitnes-001.png',
+        'img/gym2/fitnes-002.png',
+        'img/gym2/fitnes-003.png',
+        'img/gym2/fitnes-004.png',
+        'img/gym2/fitnes-000.png',
+        'img/gym2/fitnes-000.png',
+        'img/gym2/fitnes-000.png',
+        'img/gym2/fitnes-005.png',
+        'img/gym2/fitnes-000.png',
+        'img/gym2/fitnes-000.png',
+        'img/gym2/fitnes-006.png',
+        'img/gym2/fitnes-000.png'
     ],
 };
 
@@ -73,29 +74,44 @@ let mainLInfo = document.querySelector('.main_left-info');
 let mainLInfoText = document.querySelector('.main_left-info > span');
 let info = document.querySelector('.info_block');
 let infoText = document.querySelector('.info_block > p');
-let gymPicture = document.querySelector('.gym_picture > img');
 let line = document.querySelectorAll('.line');
 let vectors = document.querySelectorAll('.line > img');
+let pictures = document.querySelectorAll('.pictures');
 
 function forPicturesChange() {
     if (window.innerWidth <= 1200) {
-        mainLInfoText.textContent = 'Кликните на маркер на изображении для показа описания';
         vectors.forEach((el, ind) => (el.src = forVectors.mobile[ind]));
         objKeys.forEach((key, ind) => (resultObj[key][1] = forGymDesktopPictures.mobile[ind]));
-        gymPicture.src = 'img/Мобильная версия/Тренажеры на свободном весе/Грузоблочные тренажеры.png';
+        pictures.forEach(el => {
+            el.style.display = 'none';
+        })
+        pictures[0].style.display = 'block';
+
     } else if (window.innerWidth <= 1400) {
-        mainLInfoText.textContent = 'Наведите курсор на маркер на изображении для показа описания';
         vectors.forEach((el, ind) => (el.src = forVectors.laptop[ind]));
         objKeys.forEach((key, ind) => (resultObj[key][1] = forGymDesktopPictures.laptop[ind]));
-        gymPicture.src = 'img/Планшет/Тренажеры на свободном весе/Грузоблочные тренажеры.png';
+        pictures.forEach(el => {
+            el.style.display = 'none';
+        })
+        pictures[0].style.display = 'block';
+
     } else {
-        mainLInfoText.textContent = 'Наведите курсор на маркер на изображении для показа описания';
         vectors.forEach((el, ind) => (el.src = forVectors.desktop[ind]));
         objKeys.forEach((key, ind) => (resultObj[key][1] = forGymDesktopPictures.desktop[ind]));
-        gymPicture.src = 'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе.png';
+        pictures.forEach(el => {
+            el.style.display = 'none';
+        })
+        pictures[0].style.display = 'block';
+
     }
 }
 
+function forPicturesSrc() {
+    pictures[0].src = resultObj.fifth[1];
+    objKeys.forEach((key, index) => {
+        pictures[index + 1].src = resultObj[key][1];
+    })
+}
 function forActivate(element, ind) {
     element.classList.add('marker-animation_active');
     mainLInfo.classList.add('hidden');
@@ -106,7 +122,11 @@ function forActivate(element, ind) {
             infoText.textContent = resultObj[objKeys[ind]][0];
 
             if (resultObj[objKeys[ind]][1]) {
-                gymPicture.src = resultObj[objKeys[ind]][1];
+                pictures.forEach(el => {
+                    el.style.display = 'none';
+                })
+                pictures[ind + 1].style.display = 'block';
+
             }
         }
     }
@@ -118,13 +138,25 @@ function forDisactive(element, ind) {
     info.classList.remove('info_block_active');
     mainLInfo.classList.remove('hidden');
     if (window.innerWidth <= 1200) {
-        gymPicture.src = 'img/Мобильная версия/Тренажеры на свободном весе/Грузоблочные тренажеры.png';
+        pictures.forEach(el => {
+            el.style.display = 'none';
+        })
+        pictures[0].style.display = 'block';
+
     } else if (window.innerWidth <= 1400) {
-        gymPicture.src = 'img/Планшет/Тренажеры на свободном весе/Грузоблочные тренажеры.png';
+        pictures.forEach(el => {
+            el.style.display = 'none';
+        })
+        pictures[0].style.display = 'block';
+
     } else {
-        gymPicture.src = 'img/ПК/Тренажеры на свободном весе/Тренажеры на свободном весе.png';
+        pictures.forEach(el => {
+            el.style.display = 'none';
+        })
+        pictures[0].style.display = 'block';
     }
 }
+
 function mainFunc() {
     const isMobileView = window.innerWidth < 1200;
 
@@ -173,11 +205,13 @@ function handleClick(e) {
 
 window.addEventListener('resize', () => {
     forPicturesChange();
+    forPicturesSrc();
     mainFunc();
 });
 
 window.addEventListener('load', () => {
     forPicturesChange();
+    forPicturesSrc();
     mainFunc();
 });
 
