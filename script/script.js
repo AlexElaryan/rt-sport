@@ -126,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (resultObj[objKeys[ind]][1]) {
                     // gymPicture.src = resultObj[objKeys[ind]][1];
+                    pictures[ind + 1].src = resultObj[objKeys[ind]][1];
                     pictures.forEach(el => {
                         el.style.display = 'none';
                     })
