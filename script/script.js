@@ -76,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let mainLInfo = document.querySelector('.main_left-info');
     let info = document.querySelector('.info_block');
     let infoText = document.querySelector('.info_block > p');
-    let gymPicture = document.querySelector('.gym_picture > img');
     let line = document.querySelectorAll('.line');
     let vectors = document.querySelectorAll('.line > img');
     let pictures = document.querySelectorAll('.pictures');
@@ -85,34 +84,35 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.innerWidth <= 1200) {
             vectors.forEach((el, ind) => (el.src = forVectors.mobile[ind]));
             objKeys.forEach((key, ind) => (resultObj[key][1] = forGymDesktopPictures.mobile[ind]));
-            // gymPicture.src = 'img/gym1/fitnes-000.png';
             pictures.forEach(el => {
                 el.style.display = 'none';
             })
-            pictures[0].src = 'img/gym1/fitnes-000.png';
             pictures[0].style.display = 'block';
 
         } else if (window.innerWidth <= 1400) {
             vectors.forEach((el, ind) => (el.src = forVectors.laptop[ind]));
             objKeys.forEach((key, ind) => (resultObj[key][1] = forGymDesktopPictures.laptop[ind]));
-            // gymPicture.src = 'img/gym1/fitnes-00.png';
             pictures.forEach(el => {
                 el.style.display = 'none';
             })
-            pictures[0].src = 'img/gym1/fitnes-00.png';
             pictures[0].style.display = 'block';
 
         } else {
             vectors.forEach((el, ind) => (el.src = forVectors.desktop[ind]));
             objKeys.forEach((key, ind) => (resultObj[key][1] = forGymDesktopPictures.desktop[ind]));
-            // gymPicture.src = 'img/gym1/fitnes-0.png';
             pictures.forEach(el => {
                 el.style.display = 'none';
             })
-            pictures[0].src = 'img/gym1/fitnes-0.png';
             pictures[0].style.display = 'block';
 
         }
+    }
+
+    function forPicturesSrc() {
+        pictures[0].src = resultObj.fifth[1];
+        objKeys.forEach((key, index) => {
+            pictures[index + 1].src = resultObj[key][1];
+        })
     }
 
     function forActivate(element, ind) {
@@ -125,8 +125,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 infoText.textContent = resultObj[objKeys[ind]][0];
 
                 if (resultObj[objKeys[ind]][1]) {
-                    // gymPicture.src = resultObj[objKeys[ind]][1];
-                    pictures[ind + 1].src = resultObj[objKeys[ind]][1];
                     pictures.forEach(el => {
                         el.style.display = 'none';
                     })
@@ -143,27 +141,21 @@ document.addEventListener('DOMContentLoaded', () => {
         info.classList.remove('info_block_active');
         mainLInfo.classList.remove('hidden');
         if (window.innerWidth <= 1200) {
-            // gymPicture.src = 'img/gym1/fitnes-000.png';
             pictures.forEach(el => {
                 el.style.display = 'none';
             })
-            pictures[0].src = 'img/gym1/fitnes-000.png';
             pictures[0].style.display = 'block';
 
         } else if (window.innerWidth <= 1400) {
-            // gymPicture.src = 'img/gym1/fitnes-00.png';
             pictures.forEach(el => {
                 el.style.display = 'none';
             })
-            pictures[0].src = 'img/gym1/fitnes-00.png';
             pictures[0].style.display = 'block';
 
         } else {
-            // gymPicture.src = 'img/gym1/fitnes-0.png';
             pictures.forEach(el => {
                 el.style.display = 'none';
             })
-            pictures[0].src = 'img/gym1/fitnes-0.png';
             pictures[0].style.display = 'block';
         }
     }
@@ -215,11 +207,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('resize', () => {
         forPicturesChange();
+        forPicturesSrc();
         mainFunc();
     });
 
     window.addEventListener('load', () => {
         forPicturesChange();
+        forPicturesSrc();
         mainFunc();
     });
 
