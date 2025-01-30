@@ -68,9 +68,13 @@ body {
     width: 929px;
     height: 911px;
     position: absolute;
+    display: none;
     left: -33px;
     top: -25px;
     z-index: 0;
+}
+.gym_picture>img:first-of-type {
+    display: block;
 }
 
 .main_left-info {

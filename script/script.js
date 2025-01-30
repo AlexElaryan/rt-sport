@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
     let obj = {
         first: ['Горячекатанный профиль с толщиной стенки 3 мм – рамы тренажеров выдерживают заявленную производителем нагрузку', 'img/gym1/fitnes-1.png'],
         second: ['Стальные плиты грузоблока весом 5 кг, с полиамидными втулками для плавного и бесшумного скольжения', 'img/gym1/fitnes-2.png'],
@@ -80,20 +79,39 @@ document.addEventListener('DOMContentLoaded', () => {
     let gymPicture = document.querySelector('.gym_picture > img');
     let line = document.querySelectorAll('.line');
     let vectors = document.querySelectorAll('.line > img');
+    let pictures = document.querySelectorAll('.pictures');
 
     function forPicturesChange() {
         if (window.innerWidth <= 1200) {
             vectors.forEach((el, ind) => (el.src = forVectors.mobile[ind]));
             objKeys.forEach((key, ind) => (resultObj[key][1] = forGymDesktopPictures.mobile[ind]));
-            gymPicture.src = 'img/gym1/fitnes-000.png';
+            // gymPicture.src = 'img/gym1/fitnes-000.png';
+            pictures.forEach(el => {
+                el.style.display = 'none';
+            })
+            pictures[0].src = 'img/gym1/fitnes-000.png';
+            pictures[0].style.display = 'block';
+
         } else if (window.innerWidth <= 1400) {
             vectors.forEach((el, ind) => (el.src = forVectors.laptop[ind]));
             objKeys.forEach((key, ind) => (resultObj[key][1] = forGymDesktopPictures.laptop[ind]));
-            gymPicture.src = 'img/gym1/fitnes-00.png';
+            // gymPicture.src = 'img/gym1/fitnes-00.png';
+            pictures.forEach(el => {
+                el.style.display = 'none';
+            })
+            pictures[0].src = 'img/gym1/fitnes-00.png';
+            pictures[0].style.display = 'block';
+
         } else {
             vectors.forEach((el, ind) => (el.src = forVectors.desktop[ind]));
             objKeys.forEach((key, ind) => (resultObj[key][1] = forGymDesktopPictures.desktop[ind]));
-            gymPicture.src = 'img/gym1/fitnes-0.png';
+            // gymPicture.src = 'img/gym1/fitnes-0.png';
+            pictures.forEach(el => {
+                el.style.display = 'none';
+            })
+            pictures[0].src = 'img/gym1/fitnes-0.png';
+            pictures[0].style.display = 'block';
+
         }
     }
 
@@ -107,7 +125,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 infoText.textContent = resultObj[objKeys[ind]][0];
 
                 if (resultObj[objKeys[ind]][1]) {
-                    gymPicture.src = resultObj[objKeys[ind]][1];
+                    // gymPicture.src = resultObj[objKeys[ind]][1];
+                    pictures.forEach(el => {
+                        el.style.display = 'none';
+                    })
+                    pictures[ind + 1].style.display = 'block';
+                    
                 }
             }
         }
@@ -119,11 +142,28 @@ document.addEventListener('DOMContentLoaded', () => {
         info.classList.remove('info_block_active');
         mainLInfo.classList.remove('hidden');
         if (window.innerWidth <= 1200) {
-            gymPicture.src = 'img/gym1/fitnes-000.png';
+            // gymPicture.src = 'img/gym1/fitnes-000.png';
+            pictures.forEach(el => {
+                el.style.display = 'none';
+            })
+            pictures[0].src = 'img/gym1/fitnes-000.png';
+            pictures[0].style.display = 'block';
+
         } else if (window.innerWidth <= 1400) {
-            gymPicture.src = 'img/gym1/fitnes-00.png';
+            // gymPicture.src = 'img/gym1/fitnes-00.png';
+            pictures.forEach(el => {
+                el.style.display = 'none';
+            })
+            pictures[0].src = 'img/gym1/fitnes-00.png';
+            pictures[0].style.display = 'block';
+
         } else {
-            gymPicture.src = 'img/gym1/fitnes-0.png';
+            // gymPicture.src = 'img/gym1/fitnes-0.png';
+            pictures.forEach(el => {
+                el.style.display = 'none';
+            })
+            pictures[0].src = 'img/gym1/fitnes-0.png';
+            pictures[0].style.display = 'block';
         }
     }
     function mainFunc() {
