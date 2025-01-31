@@ -1,20 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-
-
     let obj = {
-        first: ['Горячекатанный профиль с толщиной стенки 3 мм – рамы тренажеров выдерживают заявленную производителем нагрузку', 'img/gym2/fitnes-1.png'],
-        second: ['Все узлы вращения и качения на закрытых подшипниках российского производства', 'img/gym2/fitnes-2.png'],
-        third: ['Возможность регулировки под рост спортсмена - фиксация на пружинных фиксаторах ', 'img/gym2/fitnes-3.png'],
-        forth: ['Чехлы из качественного заменителя кожи российского производства – цвет мягких элементов можно выбрать ', 'img/gym2/fitnes-4.png'],
-        fifth: ['Полимерно-порошковое покрытие рам с возможностью персонализации цвета – цвет рамы тренажера можно выбрать', 'img/gym2/fitnes-0.png'],
-        sixth: ['Все сварные соединения выполнены «вкруг» - гарантия на раму тренажера – 10 лет', 'img/gym2/fitnes-0.png'],
-        seventh: ['Промокод на скидку – ПРОМОКОД', 'img/gym2/fitnes-0.png'],
-        eight: ['Резиновые рукояти на местах хватов ', 'img/gym2/fitnes-5.png'],
-        nineth: ['Качественная пластиковая фурнитура российского производства', 'img/gym2/fitnes-0.png'],
-        ten: ['Тренажеры на свободном весе произведены и сертифицированы по ГОСТ-Р', 'img/gym2/fitnes-0.png'],
-        eleven: ['Адаптеры для хранения дисков нужного диаметра – на ваш выбор 25, 30 или 50 мм', 'img/gym2/fitnes-6.png'],
-        tuelve: ['Для задания нагрузки используются стандартные диски – на ваш выбор 25, 30 или 50 мм', 'img/gym2/fitnes-0.png'],
+        first: ['Горячекатанный профиль с толщиной стенки 3 мм – рамы тренажеров выдерживают заявленную производителем нагрузку', 'img/gym2/fitnes-1_converted.webp'],
+        second: ['Все узлы вращения и качения на закрытых подшипниках российского производства', 'img/gym2/fitnes-2_converted.webp'],
+        third: ['Возможность регулировки под рост спортсмена - фиксация на пружинных фиксаторах ', 'img/gym2/fitnes-3_converted.webp'],
+        forth: ['Чехлы из качественного заменителя кожи российского производства – цвет мягких элементов можно выбрать ', 'img/gym2/fitnes-4_converted.webp'],
+        fifth: ['Полимерно-порошковое покрытие рам с возможностью персонализации цвета – цвет рамы тренажера можно выбрать', 'img/gym2/fitnes-0_converted.webp'],
+        sixth: ['Все сварные соединения выполнены «вкруг» - гарантия на раму тренажера – 10 лет', 'img/gym2/fitnes-0_converted.webp'],
+        seventh: ['Промокод на скидку – ПРОМОКОД', 'img/gym2/fitnes-0_converted.webp'],
+        eight: ['Резиновые рукояти на местах хватов ', 'img/gym2/fitnes-5_converted.webp'],
+        nineth: ['Качественная пластиковая фурнитура российского производства', 'img/gym2/fitnes-0_converted.webp'],
+        ten: ['Тренажеры на свободном весе произведены и сертифицированы по ГОСТ-Р', 'img/gym2/fitnes-0_converted.webp'],
+        eleven: ['Адаптеры для хранения дисков нужного диаметра – на ваш выбор 25, 30 или 50 мм', 'img/gym2/fitnes-6_converted.webp'],
+        tuelve: ['Для задания нагрузки используются стандартные диски – на ваш выбор 25, 30 или 50 мм', 'img/gym2/fitnes-0_converted.webp'],
     };
 
     let resultObj = { ...obj };
@@ -27,47 +25,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let forGymDesktopPictures = {
         desktop: [
-            'img/gym2/fitnes-1.png',
-            'img/gym2/fitnes-2.png',
-            'img/gym2/fitnes-3.png',
-            'img/gym2/fitnes-4.png',
-            'img/gym2/fitnes-0.png',
-            'img/gym2/fitnes-0.png',
-            'img/gym2/fitnes-0.png',
-            'img/gym2/fitnes-5.png',
-            'img/gym2/fitnes-0.png',
-            'img/gym2/fitnes-0.png',
-            'img/gym2/fitnes-6.png',
-            'img/gym2/fitnes-0.png'
+            'img/gym2/fitnes-1_converted.webp',
+            'img/gym2/fitnes-2_converted.webp',
+            'img/gym2/fitnes-3_converted.webp',
+            'img/gym2/fitnes-4_converted.webp',
+            'img/gym2/fitnes-0_converted.webp',
+            'img/gym2/fitnes-0_converted.webp',
+            'img/gym2/fitnes-0_converted.webp',
+            'img/gym2/fitnes-5_converted.webp',
+            'img/gym2/fitnes-0_converted.webp',
+            'img/gym2/fitnes-0_converted.webp',
+            'img/gym2/fitnes-6_converted.webp',
+            'img/gym2/fitnes-0_converted.webp'
         ],
 
         laptop: [
-            'img/gym2/fitnes-01.png',
-            'img/gym2/fitnes-02.png',
-            'img/gym2/fitnes-03.png',
-            'img/gym2/fitnes-04.png',
-            'img/gym2/fitnes-00.png',
-            'img/gym2/fitnes-00.png',
-            'img/gym2/fitnes-00.png',
-            'img/gym2/fitnes-05.png',
-            'img/gym2/fitnes-00.png',
-            'img/gym2/fitnes-00.png',
-            'img/gym2/fitnes-06.png',
-            'img/gym2/fitnes-00.png'],
+            'img/gym2/fitnes-01_converted.webp',
+            'img/gym2/fitnes-02_converted.webp',
+            'img/gym2/fitnes-03_converted.webp',
+            'img/gym2/fitnes-04_converted.webp',
+            'img/gym2/fitnes-00_converted.webp',
+            'img/gym2/fitnes-00_converted.webp',
+            'img/gym2/fitnes-00_converted.webp',
+            'img/gym2/fitnes-05_converted.webp',
+            'img/gym2/fitnes-00_converted.webp',
+            'img/gym2/fitnes-00_converted.webp',
+            'img/gym2/fitnes-06_converted.webp',
+            'img/gym2/fitnes-00_converted.webp'],
 
         mobile: [
-            'img/gym2/fitnes-001.png',
-            'img/gym2/fitnes-002.png',
-            'img/gym2/fitnes-003.png',
-            'img/gym2/fitnes-004.png',
-            'img/gym2/fitnes-000.png',
-            'img/gym2/fitnes-000.png',
-            'img/gym2/fitnes-000.png',
-            'img/gym2/fitnes-005.png',
-            'img/gym2/fitnes-000.png',
-            'img/gym2/fitnes-000.png',
-            'img/gym2/fitnes-006.png',
-            'img/gym2/fitnes-000.png'
+            'img/gym2/fitnes-001_converted.webp',
+            'img/gym2/fitnes-002_converted.webp',
+            'img/gym2/fitnes-003_converted.webp',
+            'img/gym2/fitnes-004_converted.webp',
+            'img/gym2/fitnes-000_converted.webp',
+            'img/gym2/fitnes-000_converted.webp',
+            'img/gym2/fitnes-000_converted.webp',
+            'img/gym2/fitnes-005_converted.webp',
+            'img/gym2/fitnes-000_converted.webp',
+            'img/gym2/fitnes-000_converted.webp',
+            'img/gym2/fitnes-006_converted.webp',
+            'img/gym2/fitnes-000_converted.webp'
         ],
     };
 

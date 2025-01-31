@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
     let obj = {
-        first: ['Горячекатанный профиль с толщиной стенки 3 мм – рамы тренажеров выдерживают заявленную производителем нагрузку', 'img/gym1/fitnes-1.png'],
-        second: ['Стальные плиты грузоблока весом 5 кг, с полиамидными втулками для плавного и бесшумного скольжения', 'img/gym1/fitnes-2.png'],
-        third: ['Защитные панели на рамах грузоблоков', 'img/gym1/fitnes-3.png'],
-        forth: ['Специальный трос для тренажеров с допустимой нагрузкой на разрыв 1000 кг и полиамидные ролики 100 мм на подшипниках', 'img/gym1/fitnes-4.png'],
-        fifth: ['Все узлы вращения и качения на закрытых подшипниках российского производства', 'img/gym1/fitnes-0.png'],
-        sixth: ['Грузоблочные тренажеры произведены и сертифицированы по ГОСТ-Р', 'img/gym1/fitnes-0.png'],
-        seventh: ['Полимерно-порошковое покрытие рам с возможностью персонализации цвета – цвет рамы тренажера можно выбрать', 'img/gym1/fitnes-0.png'],
-        eight: ['Чехлы из качественного заменителя кожи российского производства – цвет мягких элементов можно выбрать ', 'img/gym1/fitnes-5.png'],
-        nineth: ['Все сварные соединения выполнены «вкруг» - гарантия на раму тренажера – 10 лет', 'img/gym1/fitnes-0.png'],
-        ten: ['Промокод на скидку - ПРОМОКОД', 'img/gym1/fitnes-0.png'],
-        eleven: ['Резиновые рукояти на местах хватов', 'img/gym1/fitnes-6.png'],
-        tuelve: ['Хромированные направляющие грузоблока', 'img/gym1/fitnes-7.png'],
-        thrteen: ['Качественная пластиковая фурнитура российского производства', 'img/gym1/fitnes-0.png'],
+        first: ['Горячекатанный профиль с толщиной стенки 3 мм – рамы тренажеров выдерживают заявленную производителем нагрузку', 'img/gym1/fitnes-1_converted.webp'],
+        second: ['Стальные плиты грузоблока весом 5 кг, с полиамидными втулками для плавного и бесшумного скольжения', 'img/gym1/fitnes-2_converted.webp'],
+        third: ['Защитные панели на рамах грузоблоков', 'img/gym1/fitnes-3_converted.webp'],
+        forth: ['Специальный трос для тренажеров с допустимой нагрузкой на разрыв 1000 кг и полиамидные ролики 100 мм на подшипниках', 'img/gym1/fitnes-4_converted.webp'],
+        fifth: ['Все узлы вращения и качения на закрытых подшипниках российского производства', 'img/gym1/fitnes-0_converted.webp'],
+        sixth: ['Грузоблочные тренажеры произведены и сертифицированы по ГОСТ-Р', 'img/gym1/fitnes-0_converted.webp'],
+        seventh: ['Полимерно-порошковое покрытие рам с возможностью персонализации цвета – цвет рамы тренажера можно выбрать', 'img/gym1/fitnes-0_converted.webp'],
+        eight: ['Чехлы из качественного заменителя кожи российского производства – цвет мягких элементов можно выбрать ', 'img/gym1/fitnes-5_converted.webp'],
+        nineth: ['Все сварные соединения выполнены «вкруг» - гарантия на раму тренажера – 10 лет', 'img/gym1/fitnes-0_converted.webp'],
+        ten: ['Промокод на скидку - ПРОМОКОД', 'img/gym1/fitnes-0_converted.webp'],
+        eleven: ['Резиновые рукояти на местах хватов', 'img/gym1/fitnes-6_converted.webp'],
+        tuelve: ['Хромированные направляющие грузоблока', 'img/gym1/fitnes-7_converted.webp'],
+        thrteen: ['Качественная пластиковая фурнитура российского производства', 'img/gym1/fitnes-0_converted.webp'],
     };
 
     let resultObj = { ...obj };
@@ -25,49 +25,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let forGymDesktopPictures = {
         desktop: [
-            'img/gym1/fitnes-1.png',
-            'img/gym1/fitnes-2.png',
-            'img/gym1/fitnes-3.png',
-            'img/gym1/fitnes-4.png',
-            'img/gym1/fitnes-0.png',
-            'img/gym1/fitnes-0.png',
-            'img/gym1/fitnes-0.png',
-            'img/gym1/fitnes-5.png',
-            'img/gym1/fitnes-0.png',
-            'img/gym1/fitnes-0.png',
-            'img/gym1/fitnes-6.png',
-            'img/gym1/fitnes-7.png',
-            'img/gym1/fitnes-0.png'],
+            'img/gym1/fitnes-1_converted.webp',
+            'img/gym1/fitnes-2_converted.webp',
+            'img/gym1/fitnes-3_converted.webp',
+            'img/gym1/fitnes-4_converted.webp',
+            'img/gym1/fitnes-0_converted.webp',
+            'img/gym1/fitnes-0_converted.webp',
+            'img/gym1/fitnes-0_converted.webp',
+            'img/gym1/fitnes-5_converted.webp',
+            'img/gym1/fitnes-0_converted.webp',
+            'img/gym1/fitnes-0_converted.webp',
+            'img/gym1/fitnes-6_converted.webp',
+            'img/gym1/fitnes-7_converted.webp',
+            'img/gym1/fitnes-0_converted.webp'],
 
         laptop: [
-            'img/gym1/fitnes-01.png',
-            'img/gym1/fitnes-02.png',
-            'img/gym1/fitnes-03.png',
-            'img/gym1/fitnes-04.png',
-            'img/gym1/fitnes-00.png',
-            'img/gym1/fitnes-00.png',
-            'img/gym1/fitnes-00.png',
-            'img/gym1/fitnes-05.png',
-            'img/gym1/fitnes-00.png',
-            'img/gym1/fitnes-00.png',
-            'img/gym1/fitnes-06.png',
-            'img/gym1/fitnes-07.png',
-            'img/gym1/fitnes-00.png'],
+            'img/gym1/fitnes-01_converted.webp',
+            'img/gym1/fitnes-02_converted.webp',
+            'img/gym1/fitnes-03_converted.webp',
+            'img/gym1/fitnes-04_converted.webp',
+            'img/gym1/fitnes-00_converted.webp',
+            'img/gym1/fitnes-00_converted.webp',
+            'img/gym1/fitnes-00_converted.webp',
+            'img/gym1/fitnes-05_converted.webp',
+            'img/gym1/fitnes-00_converted.webp',
+            'img/gym1/fitnes-00_converted.webp',
+            'img/gym1/fitnes-06_converted.webp',
+            'img/gym1/fitnes-07_converted.webp',
+            'img/gym1/fitnes-00_converted.webp'],
 
         mobile: [
-            'img/gym1/fitnes-001.png',
-            'img/gym1/fitnes-002.png',
-            'img/gym1/fitnes-003.png',
-            'img/gym1/fitnes-004.png',
-            'img/gym1/fitnes-000.png',
-            'img/gym1/fitnes-000.png',
-            'img/gym1/fitnes-000.png',
-            'img/gym1/fitnes-005.png',
-            'img/gym1/fitnes-000.png',
-            'img/gym1/fitnes-000.png',
-            'img/gym1/fitnes-006.png',
-            'img/gym1/fitnes-007.png',
-            'img/gym1/fitnes-000.png'],
+            'img/gym1/fitnes-001_converted.webp',
+            'img/gym1/fitnes-002_converted.webp',
+            'img/gym1/fitnes-003_converted.webp',
+            'img/gym1/fitnes-004_converted.webp',
+            'img/gym1/fitnes-000_converted.webp',
+            'img/gym1/fitnes-000_converted.webp',
+            'img/gym1/fitnes-000_converted.webp',
+            'img/gym1/fitnes-005_converted.webp',
+            'img/gym1/fitnes-000_converted.webp',
+            'img/gym1/fitnes-000_converted.webp',
+            'img/gym1/fitnes-006_converted.webp',
+            'img/gym1/fitnes-007_converted.webp',
+            'img/gym1/fitnes-000_converted.webp'],
     };
 
     let objKeys = Object.keys(obj);
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         el.style.display = 'none';
                     })
                     pictures[ind + 1].style.display = 'block';
-                    
+
                 }
             }
         }
