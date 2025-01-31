@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
             line[ind].classList.add('line_active_right');
             if (objKeys[ind]) {
                 info.classList.add('info_block_active');
-                infoText.textContent = resultObj[objKeys[ind]][0];
+                infoText.innerHTML = resultObj[objKeys[ind]][0];
 
                 if (resultObj[objKeys[ind]][1]) {
                     pictures.forEach(el => {
