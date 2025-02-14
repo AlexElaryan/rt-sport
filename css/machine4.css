@@ -1,0 +1,249 @@
+/* В style CSS поменял в анимации `lineAfter` ширину на 680. */
+
+.main-block {
+    gap: 50px;
+}
+
+.gym_picture>img {
+    width: 992px;
+    height: 829px;
+    top: -23px;
+    left: -32px;
+}
+
+.gym_picture {
+    width: 672px;
+    height: 470px;
+}
+
+.info_block {
+    width: 552px;
+    margin-top: 55px;
+    align-items: center;
+}
+
+.info_block p {
+    font-weight: 500;
+}
+
+.info_block p div {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.line {
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+
+/* marker box start */
+
+.marker-box1 {
+    top: 103px;
+    left: 251px;
+}
+
+.marker-box2 {
+    top: 390px;
+    left: 612px;
+}
+
+.marker-box3 {
+    top: 169px;
+    left: 200px;
+}
+
+.marker-box4 {
+    top: 387px;
+    left: 508px;
+}
+
+.marker-box5 {
+    top: 170px;
+    left: 538px;
+}
+
+.marker-box6 {
+    top: 326px;
+    left: 580px;
+}
+
+.marker-box7 {
+    top: 329px;
+    left: 130px;
+}
+
+.marker-box8 {
+    top: 402px;
+    left: 469px;
+}
+
+.marker-box9 {
+    top: 296px;
+    left: 338px;
+}
+
+.marker-box10 {
+    top: 172px;
+    left: 79px;
+}
+
+.marker-box11 {
+    top: 431px;
+    left: 272px;
+}
+
+.marker-box12 {
+    top: 207px;
+    left: 40px;
+}
+
+.marker-box13 {
+    top: 299px;
+    left: 541px;
+}
+
+.marker-box14 {
+    top: 387px;
+    left: 428px;
+}
+
+.marker-box15 {
+    top: 326px;
+    left: 499px;
+}
+
+.marker-box16 {
+    top: 266px;
+    left: 227px;
+}
+
+.marker-box17 {
+    top: 130px;
+    left: 136px;
+}
+
+.marker-box18 {
+    top: 387px;
+    left: 94px;
+}
+
+.marker-box19 {
+    top: 350px;
+    left: 550px;
+}
+
+.marker-box20 {
+    top: 443px;
+    left: 434px;
+}
+
+/* marker box end */
+
+/* line start */
+
+
+.line1 {
+    /* display: block; */
+    top: 0px;
+    left: 10px;
+}
+
+.line2 {
+    bottom: 7px;
+    left: 7px;
+}
+
+.line3 {
+    left: 10px;
+    top: 3px;
+}
+
+.line4 {
+    left: 12px;
+    bottom: 9px;
+}
+
+.line5 {
+    left: 9px;
+    top: 0px;
+}
+
+.line6 {
+    left: 8px;
+    bottom: 4px;
+}
+
+.line7 {
+    left: 14px;
+    bottom: 5px;
+}
+
+.line8 {
+    left: 10px;
+    bottom: 5px;
+}
+
+.line9 {
+    left: 11px;
+    bottom: 3px;
+}
+
+.line10 {
+    left: 11px;
+    top: 5px;
+}
+
+.line11 {
+    left: 13px;
+    bottom: 5px;
+}
+
+.line12 {
+    left: 10px;
+    top: -3px;
+}
+
+.line13 {
+    left: 10px;
+    bottom: 1px;
+}
+
+.line14 {
+    left: 12px;
+    bottom: 3px;
+}
+
+.line15 {
+    left: 10px;
+    bottom: 15px;
+}
+
+.line16 {
+    left: 10px;
+    bottom: 3px;
+}
+
+.line17 {
+    left: 10px;
+    top: 3px;
+}
+
+.line18 {
+    left: 13px;
+    bottom: 3px;
+}
+
+.line19 {
+    left: 10px;
+    bottom: -1px;
+}
+
+.line20 {
+    left: 10px;
+    bottom: 3px;
+}
