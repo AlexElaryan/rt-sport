@@ -17,7 +17,8 @@
                 <div class="feedback-form">
                     <h2>Оставить заявку</h2>
                     <div class="feedback-form__block">
-                        <form action>
+                        <form id="feedback" method="POST">
+                            <input type="hidden" name="access_key" value="b7e7c775-3f21-4311-8a3f-acc4f877d8c9">
                             <div class="form-tabs">
                                 <h3 class="tab active-tab" data="phone">Телефон</h3>
                                 <h3 class="tab" data="mail">Почта</h3>
@@ -30,6 +31,7 @@
                                 </h3>
                             </div>
                             <div class="form-inps">
+                                <input type="hidden" name="Выбранный способ связи" class="contact-type" value="Телефон">
                                 <div class="input-contact">
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -44,11 +46,12 @@
                                         </defs>
                                     </svg>
 
-                                    <input class="main-input" type="text" placeholder="+7 (_ _ _) _ _ _  _ _ - _ _">
+                                    <input class="main-input" name="Контактные данные для выбранного способа связи" type="text" id="phone" onfocus="clearError(this)" oninput="formatPhone(this)" placeholder="+7 (_ _ _) _ _ _  _ _ - _ _" required>
                                 </div>
-                                <input type="text" placeholder="Текстовое сообщение">
+                                <textarea class="message" type="text" placeholder="Текстовое сообщение" name="Сообщение от клиента" required oninput="expandIfNeeded(this)"></textarea>
                             </div>
                             <button type="submit">Отправить заявку</button>
+                            <div id="result"></div>
                         </form>
                         <span>Нажимая кнопку «Отправить заявку», Вы даете согласие на <a href>обработку персональных
                                 данных.</a></span>
@@ -98,6 +101,7 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script/feedback.js"></script>
 </body>
 

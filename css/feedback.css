@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -50,7 +52,7 @@ button {
     display: flex;
     align-items: center;
     gap: 28px;
-    box-shadow: 0 0 103px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 103px rgba(0, 0, 0, 0.1);
 }
 
 .feedback-qr>div {
@@ -93,7 +95,7 @@ button {
     flex-direction: column;
     gap: 5px;
     border: 4px solid #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     overflow: hidden;
     position: relative;
@@ -189,7 +191,7 @@ button {
 .feedback-form {
     padding: 100px 100px 93px 85px;
     background: #fff;
-    box-shadow: 0 0 103px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 103px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -255,11 +257,11 @@ form button:hover {
     background: #3F3F3F;
 }
 
-form input:hover {
+form input:hover, .message:hover {
     background: #E3E3E3;
 }
 
-form input:focus {
+form input:focus, .message:focus {
     background: #E3E3E3;
 }
 
@@ -270,7 +272,7 @@ form input:focus {
     gap: 9px;
 }
 
-.form-inps input {
+.form-inps input, .message {
     width: 100%;
     height: 86px;
     outline: none;
@@ -282,12 +284,22 @@ form input:focus {
     font-weight: 500;
 }
 
-.form-inps input::placeholder {
+.message {
+    padding: 30px;
+    font-family: Montserrat;
+    resize: none;
+}
+
+.message::placeholder {
+    font-family: Montserrat;
+}
+
+.form-inps input::placeholder, .message::placeholder {
     font-size: 20px;
     font-weight: 500;
 }
 
-.input-contact input {
+.input-contact #phone {
     padding-left: 62px;
 }
 
@@ -301,7 +313,7 @@ form input:focus {
 .form-tabs h3 {
     height: 37px;
     transition: .3s;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
     color: #000;
     opacity: 0.5;
@@ -318,7 +330,15 @@ form input:focus {
     border-bottom: 1px solid #4C4C4C;
 }
 
+.input-valid__error, .input-valid__error::placeholder {
+    color: red;
+}
+
 @media screen and (max-width:1780px) {
+    
+    .form-tabs h3 {
+        font-size: 14px;
+    }
     .feedback-title {
         font-size: 34px;
     }
@@ -344,13 +364,17 @@ form input:focus {
         padding: 62px 53px;
     }
 
-    .form-inps input {
+    .form-inps input, .message {
         height: 55px;
         font-size: 13px;
     }
 
-    .form-inps input::placeholder {
+    .form-inps input::placeholder, .message::placeholder {
         font-size: 13px;
+    }
+
+    .message {
+        padding: 18px 30px;
     }
 
     form button {
@@ -402,6 +426,7 @@ form input:focus {
         padding: 35px 28px;
         padding-right: 20px;
     }
+
 }
 
 .feedback-title__mob {
@@ -428,6 +453,10 @@ form input:focus {
         margin-top: 10px;
     }
 
+    .inp-mail {
+        padding-left: 15px;
+    }
+     
     .feedback-form {
         padding: 55px 40px;
     }
@@ -438,11 +467,11 @@ form input:focus {
         left: 15px;
     }
 
-    .form-inps input {
+    .form-inps input, .message {
         padding-left: 18px;
     }
 
-    .input-contact input {
+    .input-contact #phone {
         padding-left: 36px;
     }
 
