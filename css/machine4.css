@@ -148,7 +148,6 @@
 
 
 .line1 {
-    /* display: block; */
     top: 0px;
     left: 10px;
 }
@@ -246,4 +245,470 @@
 .line20 {
     left: 10px;
     bottom: 3px;
+}
+
+@media screen and (max-width:1400px) {
+    .main-block {
+        gap: 40px;
+    }
+
+    .gym_picture>img {
+        width: 878px;
+        height: 649px;
+    }
+
+    .gym_picture {
+        width: 558px;
+        height: 392px;
+    }
+
+    .info_block {
+        margin-top: 40px;
+    }
+
+    .main_right {
+        padding-top: 70px;
+    }
+
+    .marker-box1 {
+        top: 80px;
+        left: 202px;
+    }
+
+    .marker-box2 {
+        top: 326px;
+        left: 510px;
+    }
+
+    .marker-box3 {
+        top: 139px;
+        left: 160px;
+    }
+
+    .marker-box4 {
+        top: 322px;
+        left: 416px;
+    }
+
+    .marker-box5 {
+        top: 139px;
+        left: 445px;
+    }
+
+    .marker-box6 {
+        top: 270px;
+        left: 477px;
+    }
+
+    .marker-box7 {
+        top: 275px;
+        left: 98px;
+    }
+
+    .marker-box8 {
+        top: 332px;
+        left: 385px;
+    }
+
+    .marker-box9 {
+        top: 246px;
+        left: 274px;
+    }
+
+    .marker-box10 {
+        top: 139px;
+        left: 55px;
+    }
+
+    .marker-box11 {
+        top: 359px;
+        left: 222px;
+    }
+
+    .marker-box12 {
+        top: 171px;
+        left: 23px;
+    }
+
+    .marker-box13 {
+        top: 248px;
+        left: 445px;
+    }
+
+    .marker-box14 {
+        top: 322px;
+        left: 353px;
+    }
+
+    .marker-box15 {
+        top: 268px;
+        left: 413px;
+    }
+
+    .marker-box16 {
+        top: 221px;
+        left: 182px;
+    }
+
+    .marker-box17 {
+        top: 103px;
+        left: 106px;
+    }
+
+    .marker-box18 {
+        top: 323px;
+        left: 72px;
+    }
+
+    .marker-box19 {
+        top: 291px;
+        left: 452px;
+    }
+
+    .marker-box20 {
+        top: 371px;
+        left: 356px;
+    }
+
+    .line1 {
+        top: 15px;
+        left: 15px;
+    }
+
+    .line2 {
+        bottom: 7px;
+        left: 15px;
+    }
+
+    .line3 {
+        left: 12px;
+        top: 5px;
+    }
+
+    .line4 {
+        left: 12px;
+        bottom: 9px;
+    }
+
+    .line5 {
+        left: 15px;
+        top: 15px;
+    }
+
+    .line6 {
+        left: 15px;
+        bottom: 15px;
+    }
+
+    .line7 {
+        left: 14px;
+        bottom: 5px;
+    }
+
+    .line8 {
+        left: 10px;
+        bottom: 5px;
+    }
+
+    .line9 {
+        left: 11px;
+        bottom: 3px;
+    }
+
+    .line10 {
+        left: 11px;
+        top: 5px;
+    }
+
+    .line11 {
+        left: 13px;
+        bottom: 5px;
+    }
+
+    .line12 {
+        left: 10px;
+        top: -3px;
+    }
+
+    .line13 {
+        left: 12px;
+        bottom: 10px;
+    }
+
+    .line14 {
+        left: 12px;
+        bottom: 3px;
+    }
+
+    .line15 {
+        left: 10px;
+        bottom: 0px;
+    }
+
+    .line16 {
+        left: 10px;
+        bottom: 3px;
+    }
+
+    .line17 {
+        left: 10px;
+        top: 3px;
+    }
+
+    .line18 {
+        left: 13px;
+        bottom: 3px;
+    }
+
+    .line19 {
+        left: 15px;
+        bottom: 10px;
+    }
+
+    .line20 {
+        left: 15px;
+        bottom: 10px;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+
+    .main-block {
+        gap: 40px;
+        padding: 30px 0;
+    }
+
+    .main_left {
+        width: 100%;
+    }
+
+    .gym_picture>img {
+        width: 415px;
+        height: fit-content;
+        left: -19px;
+        top: -17px;
+    }
+
+    .gym_picture {
+        width: 100%;
+        height: 257px;
+    }
+
+    .info_block {
+        width: calc(100% - 34px);
+        margin-top: 0px;
+        top: 459px;
+    }
+
+    .main_right {
+        padding-top: 30px;
+    }
+
+    .marker-box1 {
+        top: 46px;
+        left: 137px;
+    }
+
+    .marker-box2 {
+        top: 211px;
+        left: 342px;
+    }
+
+    .marker-box3 {
+        top: 83px;
+        left: 106px;
+    }
+
+    .marker-box4 {
+        top: 209px;
+        left: 284px;
+    }
+
+    .marker-box5 {
+        top: 87px;
+        left: 296px;
+    }
+
+    .marker-box6 {
+        top: 173px;
+        left: 324px;
+    }
+
+    .marker-box7 {
+        top: 175px;
+        left: 65px;
+    }
+
+    .marker-box8 {
+        top: 215px;
+        left: 261px;
+    }
+
+    .marker-box9 {
+        top: 155px;
+        left: 186px;
+    }
+
+    .marker-box10 {
+        top: 85px;
+        left: 37px;
+    }
+
+    .marker-box11 {
+        top: 235px;
+        left: 147px;
+    }
+
+    .marker-box12 {
+        top: 107px;
+        left: 14px;
+    }
+
+    .marker-box13 {
+        top: 159px;
+        left: 300px;
+    }
+
+    .marker-box14 {
+        top: 207px;
+        left: 238px;
+    }
+
+    .marker-box15 {
+        top: 175px;
+        left: 276px;
+    }
+
+    .marker-box16 {
+        top: 139px;
+        left: 118px;
+    }
+
+    .marker-box17 {
+        top: 62px;
+        left: 69px;
+    }
+
+    .marker-box18 {
+        top: 209px;
+        left: 47px;
+    }
+
+    .marker-box19 {
+        top: 191px;
+        left: 304px;
+    }
+
+    .marker-box20 {
+        top: 240px;
+        left: 241px;
+    }
+
+    .line {
+        top: auto;
+        bottom: auto;
+        right: auto;
+        left: auto;
+    }
+
+    .line1 {
+        top: 12px;
+        left: 12px;
+    }
+
+    .line2 {
+        top: 10px;
+        right: 7px;
+    }
+
+    .line3 {
+        left: 7px;
+        top: 7px;
+    }
+
+    .line4 {
+        right: 13px;
+        top: 7px;
+    }
+
+    .line5 {
+        right: 10px;
+        top: 8px;
+    }
+
+    .line6 {
+        right: 8px;
+        top: 10px;
+    }
+
+    .line7 {
+        left: 10px;
+        top: 7px;
+    }
+
+    .line8 {
+        right: 7px;
+        top: 7px;
+    }
+
+    .line9 {
+        left: 8px;
+        top: 7px;
+    }
+
+    .line10 {
+        left: 11px;
+        top: 5px;
+    }
+
+    .line11 {
+        left: 13px;
+        top: 7px;
+    }
+
+    .line12 {
+        left: 10px;
+        top: 7px;
+    }
+
+    .line13 {
+        right: 7px;
+        top: 7px;
+    }
+
+    .line14 {
+        right: 7px;
+        top: 7px;
+    }
+
+    .line15 {
+        right: 7px;
+        top: 7px;
+    }
+
+    .line16 {
+        left: 10px;
+        top: 7px;
+    }
+
+    .line17 {
+        left: 10px;
+        top: 5px;
+    }
+
+    .line18 {
+        left: 7px;
+        top: 7px;
+    }
+
+    .line19 {
+        right: 7px;
+        top: 7px;
+    }
+
+    .line20 {
+        right: 7px;
+        top: 7px;
+    }
 }

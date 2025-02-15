@@ -127,16 +127,13 @@ feedback.addEventListener("submit", function (event) {
 
 function formatPhone(input) {
     let numbers = input.value.replace(/\D/g, "");
-    let formattedNumber = "+7 ";
+    let formattedNumber = "+";
 
-    if (numbers.startsWith("7")) {
-        numbers = numbers.substring(1);
-    }
-
-    if (numbers.length > 0) formattedNumber += "(" + numbers.substring(0, 3);
-    if (numbers.length >= 4) formattedNumber += ") " + numbers.substring(3, 6);
-    if (numbers.length >= 7) formattedNumber += "-" + numbers.substring(6, 8);
-    if (numbers.length >= 9) formattedNumber += "-" + numbers.substring(8, 10);
+    if (numbers.length > 0) formattedNumber += numbers.substring(0, 1);
+    if (numbers.length > 1) formattedNumber += " (" + numbers.substring(1, 4);
+    if (numbers.length >= 5) formattedNumber += ") " + numbers.substring(4, 7);
+    if (numbers.length >= 8) formattedNumber += "-" + numbers.substring(7, 9);
+    if (numbers.length >= 10) formattedNumber += "-" + numbers.substring(9, 11);
 
     input.value = formattedNumber;
 }
