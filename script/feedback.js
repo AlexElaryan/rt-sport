@@ -93,16 +93,16 @@ feedback.addEventListener("submit", function (event) {
     let isValid = true;
 
     // Phone Validation (+7 (999) 999-99-99)
-    let phoneInput = document.getElementById("phone");
-    let phoneRegex = /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
-    if (phoneInput) {
-        if (!phoneRegex.test(phoneInput.value.trim())) {
-            phoneInput.classList.add('input-valid__error');
-            isValid = false;
-        } else {
-            phoneInput.classList.remove('input-valid__error');
-        }
-    }
+    // let phoneInput = document.getElementById("phone");
+    // let phoneRegex = /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/;
+    // if (phoneInput) {
+    //     if (!phoneRegex.test(phoneInput.value.trim())) {
+    //         phoneInput.classList.add('input-valid__error');
+    //         isValid = false;
+    //     } else {
+    //         phoneInput.classList.remove('input-valid__error');
+    //     }
+    // }
 
     let mailInput = document.getElementById('mail');
     let mailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -120,16 +120,30 @@ feedback.addEventListener("submit", function (event) {
         Swal.fire({
             title: "Спасибо",
             text: "Ваша заявка успешно отправлена",
-            icon: "success"
+            icon: "success",
+            confirmButtonText: 'OK',
+            customClass: {
+                confirmButton: 'Swal_btn',
+            }
         });
     }
 });
 
-function formatPhone(input) {
-    let numbers = input.value.replace(/\D/g, "");
-    let formattedNumber = "+";
+function formatPhone(input, event) {
+    let numbers = input.value.replace(/[^+\d]/g, "");
+    let formattedNumber = "";
 
-    if (numbers.length > 0) formattedNumber += numbers.substring(0, 1);
+    if (event.data === "+" && numbers.indexOf("+") !== 0) {
+        input.value = input.value.slice(0, -1);
+        return; 
+    }
+    if (numbers[0] === "+" && formattedNumber === "") {
+        formattedNumber = "+";
+        numbers = numbers.slice(1);
+    }
+
+
+    if (numbers.length > 0) formattedNumber += numbers.substring(0, 1); 
     if (numbers.length > 1) formattedNumber += " (" + numbers.substring(1, 4);
     if (numbers.length >= 5) formattedNumber += ") " + numbers.substring(4, 7);
     if (numbers.length >= 8) formattedNumber += "-" + numbers.substring(7, 9);

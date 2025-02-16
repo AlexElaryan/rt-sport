@@ -257,11 +257,13 @@ form button:hover {
     background: #3F3F3F;
 }
 
-form input:hover, .message:hover {
+form input:hover,
+.message:hover {
     background: #E3E3E3;
 }
 
-form input:focus, .message:focus {
+form input:focus,
+.message:focus {
     background: #E3E3E3;
 }
 
@@ -272,7 +274,8 @@ form input:focus, .message:focus {
     gap: 9px;
 }
 
-.form-inps input, .message {
+.form-inps input,
+.message {
     width: 100%;
     height: 86px;
     outline: none;
@@ -294,7 +297,8 @@ form input:focus, .message:focus {
     font-family: Montserrat;
 }
 
-.form-inps input::placeholder, .message::placeholder {
+.form-inps input::placeholder,
+.message::placeholder {
     font-size: 20px;
     font-weight: 500;
 }
@@ -330,15 +334,31 @@ form input:focus, .message:focus {
     border-bottom: 1px solid #4C4C4C;
 }
 
-.input-valid__error, .input-valid__error::placeholder {
+.input-valid__error,
+.input-valid__error::placeholder {
     color: red;
 }
 
+.Swal_btn {
+    transition: .3s;
+    background: #4C4C4C !important;
+    color: white !important;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.Swal_btn:hover {
+    background: #3F3F3F !important;
+}
+
 @media screen and (max-width:1780px) {
-    
+
     .form-tabs h3 {
         font-size: 14px;
     }
+
     .feedback-title {
         font-size: 34px;
     }
@@ -364,12 +384,14 @@ form input:focus, .message:focus {
         padding: 62px 53px;
     }
 
-    .form-inps input, .message {
+    .form-inps input,
+    .message {
         height: 55px;
         font-size: 13px;
     }
 
-    .form-inps input::placeholder, .message::placeholder {
+    .form-inps input::placeholder,
+    .message::placeholder {
         font-size: 13px;
     }
 
@@ -456,7 +478,7 @@ form input:focus, .message:focus {
     .inp-mail {
         padding-left: 15px;
     }
-     
+
     .feedback-form {
         padding: 55px 40px;
     }
@@ -467,7 +489,8 @@ form input:focus, .message:focus {
         left: 15px;
     }
 
-    .form-inps input, .message {
+    .form-inps input,
+    .message {
         padding-left: 18px;
     }
 
@@ -517,8 +540,9 @@ form input:focus, .message:focus {
     .feedback-right p {
         font-size: 12px;
     }
+
     .feedback-right__bottom {
-        padding: 35px 30px ;
+        padding: 35px 30px;
         padding-right: 15px;
         height: fit-content;
     }

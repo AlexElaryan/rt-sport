@@ -46,7 +46,7 @@
                                         </defs>
                                     </svg>
 
-                                    <input class="main-input" name="Контактные данные для выбранного способа связи" type="text" id="phone" onfocus="clearError(this)" oninput="formatPhone(this)" placeholder="+7 (_ _ _) _ _ _  _ _ - _ _" required>
+                                    <input class="main-input" name="Контактные данные для выбранного способа связи" type="text" id="phone" onfocus="clearError(this)" oninput="formatPhone(this, event)" placeholder="+7 (_ _ _) _ _ _  _ _ - _ _" required maxlength="20">
                                 </div>
                                 <textarea class="message" type="text" placeholder="Текстовое сообщение" name="Сообщение от клиента" required oninput="expandIfNeeded(this)"></textarea>
                             </div>
